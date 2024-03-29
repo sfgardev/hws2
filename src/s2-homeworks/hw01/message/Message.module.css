@@ -21,8 +21,9 @@
   padding: 0.5rem 1rem;
   background-color: #0066cc;
   color: #fff;
-  box-shadow: 0px 1px 2px 0px rgba(29, 33, 38, 0.1),
-    0px 5px 20px 0px rgba(29, 33, 38, 0.03);
+ 
+  filter: drop-shadow(0px 1px 2px rgba(29, 33, 38, 0.1))
+    drop-shadow(0px 5px 20px rgba(29, 33, 38, 0.03));
   border-radius: 4px;
   position: relative;
 }
