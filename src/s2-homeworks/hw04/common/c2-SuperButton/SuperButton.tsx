@@ -11,12 +11,6 @@ type SuperButtonPropsType = DefaultButtonPropsType & {
   xType?: string;
 };
 
-const buttonVariants = {
-  default: s.default,
-  red: s.red,
-  secondary: s.secondary,
-};
-
 const SuperButton: React.FC<SuperButtonPropsType> = ({
   xType = "default",
   className,
