@@ -1,11 +1,24 @@
 .spanBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
 }
 
 .span {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.21;
+  color: #0080ff;
+  text-transform: capitalize;
 }
 
 .input {
+  width: 276px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .pen {
+  width: 24px;
+  height: 24px;
 }
