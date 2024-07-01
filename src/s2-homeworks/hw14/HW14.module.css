@@ -1,7 +1,14 @@
 .tech {
-
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
 }
 
 .loading {
-
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.17;
+  text-align: right;
+  width: 372px;
+  margin-top: 0.625rem;
 }
