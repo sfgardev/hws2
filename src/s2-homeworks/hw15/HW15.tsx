@@ -43,7 +43,7 @@ const HW15 = () => {
   const [page, setPage] = useState(1);
   const [count, setCount] = useState(4);
   const [idLoading, setLoading] = useState(false);
-  const [totalCount, setTotalCount] = useState(36);
+  const [totalCount, setTotalCount] = useState(100);
   const [searchParams, setSearchParams] = useSearchParams();
   const [techs, setTechs] = useState<TechType[]>([]);
 
@@ -70,7 +70,7 @@ const HW15 = () => {
     setPage(newPage);
     setCount(newCount);
     sendQuery({ page: newPage, count: newCount });
-    setSearchParams({ page: String(newPage), count: String(newCount) });
+    setSearchParams({ sort, page: String(newPage), count: String(newCount) });
   };
 
   const onChangeSort = (newSort: string) => {
@@ -81,8 +81,12 @@ const HW15 = () => {
     // setSearchParams(
     setSort(newSort);
     setPage(1);
-    sendQuery({ sort: newSort });
-    setSearchParams({ sort: newSort });
+    sendQuery({ sort: newSort, page, count });
+    setSearchParams({
+      sort: newSort,
+      page: String(page),
+      count: String(count),
+    });
   };
 
   useEffect(() => {

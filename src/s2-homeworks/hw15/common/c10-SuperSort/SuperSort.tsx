@@ -33,7 +33,6 @@ const SuperSort: React.FC<SuperSortPropsType> = ({
   };
 
   const icon = sort === down ? downIcon : sort === up ? upIcon : noneIcon;
-  console.log(id + "-sort-" + value);
 
   return (
     <span id={id + "-sort-" + value} onClick={onChangeCallback}>
