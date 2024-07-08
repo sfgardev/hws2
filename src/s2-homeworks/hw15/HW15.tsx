@@ -79,13 +79,11 @@ const HW15 = () => {
     // setPage(1) // при сортировке сбрасывать на 1 страницу
     // sendQuery(
     // setSearchParams(
-    console.log(newSort);
     setSort(newSort);
     setPage(1);
     sendQuery({ sort: newSort });
     setSearchParams({ sort: newSort });
   };
-  console.log(Object.fromEntries(searchParams));
 
   useEffect(() => {
     const params = Object.fromEntries(searchParams);
